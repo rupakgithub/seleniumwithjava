@@ -37,10 +37,12 @@ public class SeleniumTEsts {
     }
 
     @Test
-    public void positive_login_scenario(){
+    public void positive_login_scenario() throws InterruptedException {
+        driver.get("https://www.saucedemo.com/");
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("standard_user");
-        driver.findElement(By.id("#password")).sendKeys("secret_sauce");
-        driver.findElement(By.id("#login-button")).click();
+        driver.findElement(By.cssSelector("input[id='password']")).sendKeys("secret_sauce");
+        driver.findElement(By.cssSelector("input[id='login-button']")).click();
+        Thread.sleep(5);
     }
 
     @AfterTest
