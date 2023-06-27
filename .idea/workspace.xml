@@ -42,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SeleniumTEsts.positive_login_scenario">
+  <component name="RunManager" selected="TestNG.SeleniumTEsts">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="seleniumwithjava" />
@@ -73,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTEsts.firsttest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTEsts.cart_scenario" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -83,7 +83,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.SeleniumTEsts" />
-      <option name="METHOD_NAME" value="firsttest" />
+      <option name="METHOD_NAME" value="cart_scenario" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -129,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SeleniumTEsts.positive_login_scenario" />
         <item itemvalue="TestNG.SeleniumTEsts" />
+        <item itemvalue="TestNG.SeleniumTEsts.cart_scenario" />
+        <item itemvalue="TestNG.SeleniumTEsts.positive_login_scenario" />
         <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.SeleniumTEsts.secondtest" />
-        <item itemvalue="TestNG.SeleniumTEsts.firsttest" />
       </list>
     </recent_temporary>
   </component>
