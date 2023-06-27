@@ -39,10 +39,18 @@ public class SeleniumTEsts {
     @Test
     public void positive_login_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
-        driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("standard_user");
+        driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("locked_out_user");
         driver.findElement(By.cssSelector("input[id='password']")).sendKeys("secret_sauce");
         driver.findElement(By.cssSelector("input[id='login-button']")).click();
-        Thread.sleep(5);
+        Thread.sleep(2000);
+        String errortext = driver.findElement(By.xpath("//div[contains(@class,'error-message-container')]/h3[contains(text(),'Sorry, this user has been locked out.')]")).getText();
+        if (errortext.contains("this user has been locked out.")){
+            Assert.assertTrue(true);
+        }
+        else {
+            Assert.fail("Text doesn't contains locked out user");
+        }
+        Thread.sleep(3000);
     }
 
     @AfterTest
