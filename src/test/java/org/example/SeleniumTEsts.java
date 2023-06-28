@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SeleniumTEsts {
@@ -25,6 +26,8 @@ public class SeleniumTEsts {
         ops.addArguments("--remote-allow-origins=*");
         ops.addArguments("--start-maximized");
         ops.addArguments("--incognito");
+        ops.setExperimentalOption("useAutomationExtension", false);
+        ops.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         driver = new ChromeDriver(ops);
 
     }
