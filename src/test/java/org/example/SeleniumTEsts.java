@@ -99,10 +99,23 @@ public class SeleniumTEsts {
         Thread.sleep(1000);
     }
 
+
     @Test(priority = 4)
     public void verify_total_amount() throws InterruptedException {
         driver.findElement(By.xpath("//button[@id='checkout']")).click();
         Thread.sleep(500);
+
+        driver.findElement(By.xpath("//input[@id='continue']")).click();
+
+        String errortext = driver.findElement(By.xpath("//div[contains(@class,'error-message-container')]/h3")).getText();
+
+        if (errortext.contains("Error: First Name is required")) {
+            Assert.assertTrue(true);
+        } else {
+            Assert.fail("Error didn't appeared");
+        }
+
+
         driver.findElement(By.xpath("//input[@id='first-name']")).sendKeys("Rupak");
         driver.findElement(By.xpath("//input[@id='last-name']")).sendKeys("Bha");
         driver.findElement(By.xpath("//input[@id='postal-code']")).sendKeys("784562");
@@ -113,8 +126,8 @@ public class SeleniumTEsts {
 
         List<WebElement> element = driver.findElements(By.xpath("//div[@class='inventory_item_price']"));
 
-        for(int i = 0; i < element.size(); i++) {
-            String price = element.get(i).getText().replaceAll("[a-zA-Z$]","").trim();
+        for (WebElement webElement : element) {
+            String price = webElement.getText().replaceAll("[a-zA-Z$]", "").trim();
             System.out.println(price);
             inventory_price.add(Double.parseDouble(price));
         }
