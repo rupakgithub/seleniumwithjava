@@ -11,6 +11,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class SeleniumTEsts {
 
     WebDriver driver;
@@ -38,7 +40,7 @@ public class SeleniumTEsts {
         }
     }
 
-    @Test(enabled = false)
+    @Test(priority = 1)
     public void positive_login_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("locked_out_user");
@@ -55,7 +57,7 @@ public class SeleniumTEsts {
         Thread.sleep(3000);
     }
 
-    @Test
+    @Test(priority = 2)
     public void cart_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("standard_user");
@@ -76,7 +78,19 @@ public class SeleniumTEsts {
         else {
             Assert.fail("Cart don't have exactly 2 items");
         }
-        Thread.sleep(2000);
+        Thread.sleep(1000);
+
+    }
+
+    @Test(priority = 3)
+    public void verify_total_items(){
+        driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
+       List<WebElement> element = driver.findElements(By.xpath("//div[@class='cart_list']/div[@class='cart_item']"));
+       if(element.size() == 2){
+           Assert.assertTrue(true);
+       }else {
+           Assert.fail("Cart don't have exactly 2 items");
+       }
     }
 
     @AfterTest
