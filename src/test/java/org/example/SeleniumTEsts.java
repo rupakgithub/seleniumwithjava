@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class SeleniumTEsts {
@@ -25,6 +24,7 @@ public class SeleniumTEsts {
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--remote-allow-origins=*");
         ops.addArguments("--start-maximized");
+        ops.addArguments("--incognito");
         driver = new ChromeDriver(ops);
 
     }
