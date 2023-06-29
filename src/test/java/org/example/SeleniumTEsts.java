@@ -53,6 +53,26 @@ public class SeleniumTEsts {
         }
     }
 
+    @Test(priority = 0)
+    public void performance_glitch_login_scenario() throws InterruptedException {
+        driver.get("https://www.saucedemo.com/");
+        driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("performance_glitch_user");
+        driver.findElement(By.cssSelector("input[id='password']")).sendKeys("secret_sauce");
+        driver.findElement(By.cssSelector("input[id='login-button']")).click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='app_logo' and text()='Swag Labs']")));
+        //Thread.sleep(2000);
+        String errortext = driver.findElement(By.xpath("//div[@class='app_logo' and text()='Swag Labs']")).getText();
+        if (errortext.contains("Swag Labs")){
+            Assert.assertTrue(true);
+        }
+        else {
+            Assert.fail("Logo didn't appeared after waiting for 10 seconds");
+        }
+        //Thread.sleep(3000);
+    }
+
     @Test(priority = 1)
     public void positive_login_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
