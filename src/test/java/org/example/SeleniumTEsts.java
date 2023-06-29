@@ -6,14 +6,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 public class SeleniumTEsts {
 
@@ -29,6 +35,8 @@ public class SeleniumTEsts {
         ops.setExperimentalOption("useAutomationExtension", false);
         ops.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         driver = new ChromeDriver(ops);
+        //implicit wait
+        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 
     }
 
@@ -51,7 +59,7 @@ public class SeleniumTEsts {
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("locked_out_user");
         driver.findElement(By.cssSelector("input[id='password']")).sendKeys("secret_sauce");
         driver.findElement(By.cssSelector("input[id='login-button']")).click();
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         String errortext = driver.findElement(By.xpath("//div[contains(@class,'error-message-container')]/h3[contains(text(),'Sorry, this user has been locked out.')]")).getText();
         if (errortext.contains("this user has been locked out.")){
             Assert.assertTrue(true);
@@ -59,7 +67,7 @@ public class SeleniumTEsts {
         else {
             Assert.fail("Text doesn't contains locked out user");
         }
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
     }
 
     @Test(priority = 2)
@@ -68,11 +76,11 @@ public class SeleniumTEsts {
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("standard_user");
         driver.findElement(By.cssSelector("input[id='password']")).sendKeys("secret_sauce");
         driver.findElement(By.cssSelector("input[id='login-button']")).click();
-        Thread.sleep(1000);
+       // Thread.sleep(1000);
 
         for (int i=1; i <= 2; i++){
             driver.findElement(By.xpath("(//button[text()='Add to cart'])["+i+"]")).click();
-            Thread.sleep(1000);
+           // Thread.sleep(1000);
         }
 
         String cartItems = driver.findElement(By.xpath("//div[@id='shopping_cart_container']//span")).getText();
@@ -83,7 +91,7 @@ public class SeleniumTEsts {
         else {
             Assert.fail("Cart don't have exactly 2 items");
         }
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
 
     }
 
@@ -96,16 +104,26 @@ public class SeleniumTEsts {
        }else {
            Assert.fail("Cart don't have exactly 2 items");
        }
-        Thread.sleep(1000);
+       // Thread.sleep(1000);
     }
 
 
     @Test(priority = 4)
     public void verify_total_amount() throws InterruptedException {
         driver.findElement(By.xpath("//button[@id='checkout']")).click();
-        Thread.sleep(500);
+        //Thread.sleep(500);
 
         driver.findElement(By.xpath("//input[@id='continue']")).click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'error-message-container')]/h3")));
+
+       /* FluentWait wait = new FluentWait(driver);
+        wait.withTimeout(Duration.ofSeconds(10));
+        wait.pollingEvery(Duration.ofMillis(1));
+        wait.ignoring(NoSuchElementException.class);
+
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[contains(@class,'error-message-container')]/h3")));*/
 
         String errortext = driver.findElement(By.xpath("//div[contains(@class,'error-message-container')]/h3")).getText();
 
@@ -120,7 +138,7 @@ public class SeleniumTEsts {
         driver.findElement(By.xpath("//input[@id='last-name']")).sendKeys("Bha");
         driver.findElement(By.xpath("//input[@id='postal-code']")).sendKeys("784562");
         driver.findElement(By.xpath("//input[@id='continue']")).click();
-        Thread.sleep(500);
+       // Thread.sleep(500);
 
         List<Double> inventory_price = new ArrayList<>();
 
