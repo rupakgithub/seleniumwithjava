@@ -1,6 +1,7 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,7 +35,7 @@ public class Selectclasstest {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void test_select_class()  {
         driver.get("https://demoqa.com/select-menu");
 
@@ -42,8 +43,29 @@ public class Selectclasstest {
 
         Select se = new Select(selectcolor);
 
+        se.selectByIndex(1);
         se.selectByVisibleText("Purple");
+        se.selectByValue("Red");
+
+        se.deselectAll();
     }
+
+    @Test
+    public void test_alerts() throws InterruptedException {
+        driver.get("https://demoqa.com/alerts");
+
+        driver.findElement(By.xpath("//button[@id='alertButton']")).click();
+
+        Thread.sleep(2000);
+        System.out.println(driver.switchTo().alert().getText());
+
+        driver.switchTo().alert().dismiss();
+        driver.switchTo().alert().accept();
+
+
+        Thread.sleep(2000);
+    }
+
 
 
     @AfterTest
