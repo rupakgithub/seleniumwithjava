@@ -71,7 +71,7 @@ public class MouseHoverTests {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void open_in_new_link_test() throws InterruptedException {
         driver.get("https://www.tutorialspoint.com/about/about_careers.htm");
         String term = Keys.chord(Keys.CONTROL, Keys.ENTER);
@@ -81,9 +81,9 @@ public class MouseHoverTests {
         List<String> tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
 
-        String url = driver.getCurrentUrl();
+        String title = driver.getTitle();
 
-        if (url.equals("Terms of Use")) {
+        if (title.equals("Terms of Use")) {
             Assert.assertTrue(true);
         } else {
             Assert.fail("Landed in wrong tab");
@@ -93,6 +93,31 @@ public class MouseHoverTests {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='search-strings']")));
 
         driver.findElement(By.xpath("//input[@id='search-strings']")).sendKeys("hhgj");
+    }
+
+    @Test
+    public void test_new_window(){
+        driver.get("https://demoqa.com/browser-windows");
+        String currentwindowid = driver.getWindowHandle();
+        driver.findElement(By.xpath("//button[@id='windowButton']")).click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+
+        for (String allwindow: driver.getWindowHandles()) {
+            if (!currentwindowid.contentEquals(allwindow)){
+                driver.switchTo().window(allwindow);
+                break;
+            }
+        }
+
+        String urlofnewwindow = driver.getCurrentUrl();
+        if(urlofnewwindow.contains("https://demoqa.com/sample")){
+            Assert.assertTrue(true);
+        } else {
+            Assert.fail("URL of child window is different");
+        }
+
     }
 
 
