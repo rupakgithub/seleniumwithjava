@@ -2,6 +2,7 @@ package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +16,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MouseHoverTests {
@@ -38,8 +41,8 @@ public class MouseHoverTests {
 
     }
 
-    @Test
-    public void hover_test()  {
+   // @Test
+    public void hover_test() throws InterruptedException {
         driver.get("https://www.spicejet.com/");
         Actions actions = new Actions(driver);
         WebElement spicejet = driver.findElement(By.xpath("(//div[text()='SpiceClub'])[1]"));
@@ -58,14 +61,33 @@ public class MouseHoverTests {
             Assert.fail("Link Our Program has no attribute _blank");
         }
 
-       // homeprogram.click();
+       homeprogram.click();
+
+        Thread.sleep(4000);
+
+        actions.keyDown(Keys.CONTROL).keyDown(Keys.TAB).build().perform();
 
 
+
+    }
+
+    @Test
+    public void open_in_new_link_test() throws InterruptedException {
+        driver.get("https://www.tutorialspoint.com/about/about_careers.htm");
+        String term = Keys.chord(Keys.CONTROL, Keys.ENTER);
+        driver.findElement(By.xpath("//a[text()='Terms of Use']")).sendKeys(term);
+        Thread.sleep(1000);
+
+        List<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+
+        Thread.sleep(4000);
     }
 
 
     @AfterTest
     public void aftertest() {
-        driver.quit();
+
+       driver.quit();
     }
 }

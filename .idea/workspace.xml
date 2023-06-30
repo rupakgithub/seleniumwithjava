@@ -42,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.MouseHoverTests.hover_test">
+  <component name="RunManager" selected="TestNG.MouseHoverTests.open_in_new_link_test">
     <configuration name="MouseHoverTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
@@ -71,6 +71,24 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.MouseHoverTests" />
       <option name="METHOD_NAME" value="hover_test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MouseHoverTests.open_in_new_link_test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MouseHoverTests" />
+      <option name="METHOD_NAME" value="open_in_new_link_test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -113,31 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTEsts.positive_login_scenario" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SeleniumTEsts" />
-      <option name="METHOD_NAME" value="positive_login_scenario" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MouseHoverTests.open_in_new_link_test" />
         <item itemvalue="TestNG.MouseHoverTests.hover_test" />
         <item itemvalue="TestNG.MouseHoverTests" />
         <item itemvalue="TestNG.SeleniumTEsts" />
         <item itemvalue="TestNG.SeleniumTEsts.cart_scenario" />
-        <item itemvalue="TestNG.SeleniumTEsts.positive_login_scenario" />
       </list>
     </recent_temporary>
   </component>
