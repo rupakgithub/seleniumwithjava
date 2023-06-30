@@ -81,7 +81,18 @@ public class MouseHoverTests {
         List<String> tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
 
-        Thread.sleep(4000);
+        String url = driver.getCurrentUrl();
+
+        if (url.equals("Terms of Use")) {
+            Assert.assertTrue(true);
+        } else {
+            Assert.fail("Landed in wrong tab");
+        }
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='search-strings']")));
+
+        driver.findElement(By.xpath("//input[@id='search-strings']")).sendKeys("hhgj");
     }
 
 
