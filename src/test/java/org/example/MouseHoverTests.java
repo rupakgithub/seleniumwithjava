@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -28,7 +29,7 @@ public class MouseHoverTests {
         ops.addArguments("--remote-allow-origins=*");
         ops.addArguments("--start-maximized");
         ops.addArguments("--incognito");
-        ops.addArguments("--disable-popup-blocking");
+        ops.addArguments("--disable-geolocation");
         ops.setExperimentalOption("useAutomationExtension", false);
         ops.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         driver = new ChromeDriver(ops);
@@ -38,7 +39,7 @@ public class MouseHoverTests {
     }
 
     @Test
-    public void hover_test() throws InterruptedException {
+    public void hover_test()  {
         driver.get("https://www.spicejet.com/");
         Actions actions = new Actions(driver);
         WebElement spicejet = driver.findElement(By.xpath("(//div[text()='SpiceClub'])[1]"));
@@ -47,10 +48,18 @@ public class MouseHoverTests {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href,'/home#program')]")));
 
-        driver.findElement(By.xpath("//a[contains(@href,'/home#program')]")).click();
+        WebElement homeprogram = driver.findElement(By.xpath("//a[contains(@href,'/home#program')]"));
 
+        String targetattr = homeprogram.getAttribute("target");
 
-        Thread.sleep(5000);
+        if (targetattr.equals("_blank")) {
+            Assert.assertTrue(true);
+        } else {
+            Assert.fail("Link Our Program has no attribute _blank");
+        }
+
+       // homeprogram.click();
+
 
     }
 
