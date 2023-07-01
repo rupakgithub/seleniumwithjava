@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Frameexample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Selectclasstest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Selectclasstest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +42,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Selectclasstest.test_alerts">
-    <configuration name="MouseHoverTests.hover_test" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Frameexample.test_iframes">
+    <configuration name="Frameexample.test_iframes" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -52,8 +52,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.MouseHoverTests" />
-      <option name="METHOD_NAME" value="hover_test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Frameexample" />
+      <option name="METHOD_NAME" value="test_iframes" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Frameexample.test_iframes" />
         <item itemvalue="TestNG.Selectclasstest.test_alerts" />
         <item itemvalue="TestNG.MouseHoverTests.test_new_window" />
         <item itemvalue="TestNG.Selectclasstest.test_select_class" />
         <item itemvalue="TestNG.MouseHoverTests.open_in_new_link_test" />
-        <item itemvalue="TestNG.MouseHoverTests.hover_test" />
       </list>
     </recent_temporary>
   </component>
