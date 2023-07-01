@@ -3,6 +3,7 @@ package org.example;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -55,6 +56,30 @@ public class Frameexample {
         System.out.println(framecontent2);
         driver.switchTo().defaultContent();
 
+    }
+
+    @Test
+    public void test_nested_iframe(){
+        driver.get("https://demoqa.com/nestedframes");
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("frame1"));
+
+        String framecontent = driver.findElement(By.xpath("//body")).getText();
+
+        System.out.println(framecontent);
+
+        WebElement childframe  = driver.findElement(By.xpath("//iframe[@srcdoc]"));
+
+        driver.switchTo().frame(childframe);
+
+        String childframecontent = driver.findElement(By.xpath("//body")).getText();
+
+        System.out.println(childframecontent);
+
+        driver.switchTo().defaultContent();
+
+        driver.switchTo().parentFrame();
     }
 
     @AfterTest
