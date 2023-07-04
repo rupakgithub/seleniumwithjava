@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -109,6 +110,33 @@ public class WidgetsTest {
 
         Thread.sleep(5000);
 
+    }
+
+    @Test
+    public void test_dynamic_elements() throws InterruptedException {
+        driver.get("https://demoqa.com/dynamic-properties");
+        WebElement button = driver.findElement(By.xpath("//button[@id='enableAfter']"));
+        WebElement button2 = driver.findElement(By.xpath("//button[@id='visibleAfter']"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(button));
+
+        wait.until(ExpectedConditions.visibilityOf(button2));
+
+        Thread.sleep(5000);
+
+    }
+
+    @Test
+    public void test_file_upload(){
+        driver.get("https://demoqa.com/upload-download");
+        driver.findElement(By.xpath("//input[@id='uploadFile']")).sendKeys("C:\\Users\\ASUS\\Desktop\\git example\\seleniumwithjava\\downloads\\sampleFile.jpeg");
+        String uploadtext = driver.findElement(By.xpath("//p[@id='uploadedFilePath']")).getText();
+
+        if (uploadtext.contains("sampleFile.jpeg")){
+            Assert.assertTrue(true);
+        }else {
+            Assert.fail("File not uploaded!!");
+        }
     }
 
 

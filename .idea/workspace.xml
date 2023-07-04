@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Javascriptexecutortests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/WidgetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/WidgetsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Javascriptexecutortests.test_entertext">
+  <component name="RunManager" selected="TestNG.WidgetsTest.test_file_upload">
     <configuration name="Javascriptexecutortests.test_entertext" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
@@ -115,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WidgetsTest.test_drag_and_drop" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WidgetsTest.test_file_upload" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +125,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.WidgetsTest" />
-      <option name="METHOD_NAME" value="test_drag_and_drop" />
+      <option name="METHOD_NAME" value="test_file_upload" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WidgetsTest.test_file_upload" />
         <item itemvalue="TestNG.Javascriptexecutortests.test_entertext" />
         <item itemvalue="TestNG.Javascriptexecutortests.test_scroll" />
         <item itemvalue="TestNG.WidgetsTest.test_download" />
         <item itemvalue="TestNG.WidgetsTest.test_button_color" />
-        <item itemvalue="TestNG.WidgetsTest.test_drag_and_drop" />
       </list>
     </recent_temporary>
   </component>
