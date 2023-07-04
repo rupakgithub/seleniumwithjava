@@ -42,7 +42,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.WidgetsTest.test_file_upload">
+  <component name="RunManager" selected="TestNG.WidgetsTest.test_autocomplete">
     <configuration name="Javascriptexecutortests.test_entertext" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
@@ -79,7 +79,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WidgetsTest.test_button_color" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WidgetsTest.test_autocomplete" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -89,7 +89,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.WidgetsTest" />
-      <option name="METHOD_NAME" value="test_button_color" />
+      <option name="METHOD_NAME" value="test_autocomplete" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WidgetsTest.test_autocomplete" />
         <item itemvalue="TestNG.WidgetsTest.test_file_upload" />
         <item itemvalue="TestNG.Javascriptexecutortests.test_entertext" />
         <item itemvalue="TestNG.Javascriptexecutortests.test_scroll" />
         <item itemvalue="TestNG.WidgetsTest.test_download" />
-        <item itemvalue="TestNG.WidgetsTest.test_button_color" />
       </list>
     </recent_temporary>
   </component>
