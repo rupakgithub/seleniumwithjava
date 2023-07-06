@@ -1,1 +1,24 @@
 curl --location 'https://reqres.in/api/users/1'
+
+
+********** TESTS **********
+
+pm.test("Status code should be 200",()=>{
+    pm.response.to.have.status(200);
+})
+
+pm.test("Verify status code name",()=>{
+    pm.response.to.have.status("OK")
+})
+const jsonData = pm.response.json();
+pm.test("Test data response type",()=>{
+    pm.expect(jsonData.data.id).to.be.a("number");
+});
+
+pm.test("Verify value of data",()=>{
+    pm.expect(jsonData.data.first_name).to.eql("George");
+})
+
+pm.test("Verify last name of data",()=>{
+    pm.expect(jsonData.data.last_name).to.eql("Bluth");
+})
