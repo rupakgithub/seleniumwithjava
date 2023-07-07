@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/apitests/FirstAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Frameexample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Frameexample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Javascriptexecutortests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Javascriptexecutortests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MouseHoverTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/MouseHoverTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Selectclasstest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SeleniumTEsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/SeleniumTEsts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/WidgetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/WidgetsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/apitests/FirstAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/apitests/FirstAPITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +41,25 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.FirstAPITest.validate_get_request">
+  <component name="RunManager" selected="TestNG.FirstAPITest.bdd_validate_api">
+    <configuration name="FirstAPITest.bdd_validate_api" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.apitests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.apitests.FirstAPITest" />
+      <option name="METHOD_NAME" value="bdd_validate_api" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FirstAPITest.validate_get_request" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
@@ -78,24 +89,6 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.uitests.Javascriptexecutortests" />
       <option name="METHOD_NAME" value="test_entertext" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Javascriptexecutortests.test_scroll" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.uitests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Javascriptexecutortests" />
-      <option name="METHOD_NAME" value="test_scroll" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FirstAPITest.bdd_validate_api" />
         <item itemvalue="TestNG.FirstAPITest.validate_get_request" />
         <item itemvalue="TestNG.WidgetsTest.test_autocomplete" />
         <item itemvalue="TestNG.WidgetsTest.test_file_upload" />
         <item itemvalue="TestNG.Javascriptexecutortests.test_entertext" />
-        <item itemvalue="TestNG.Javascriptexecutortests.test_scroll" />
       </list>
     </recent_temporary>
   </component>

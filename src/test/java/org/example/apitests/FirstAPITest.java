@@ -20,4 +20,10 @@ public class FirstAPITest {
         int statuscode = response.getStatusCode();
         Assert.assertEquals(statuscode, 200);
     }
+
+    @Test
+    public void bdd_validate_api(){
+        given().get("https://reqres.in/api/users?page=1").then()
+                .statusCode(200).body("data[0].id", equalTo(1));
+    }
 }
