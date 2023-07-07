@@ -1,12 +1,13 @@
-package org.example;
+package org.example.uitests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -14,7 +15,7 @@ import org.testng.annotations.Test;
 import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
-public class Javascriptexecutortests {
+public class Selectclasstest {
 
     WebDriver driver;
 
@@ -34,28 +35,43 @@ public class Javascriptexecutortests {
 
     }
 
-    @Test
-    public void test_scroll() throws InterruptedException {
-        driver.get("https://www.tutorialspoint.com/index.htm");
-        WebElement element = driver.findElement(By.xpath("//*[text()='ABOUT US']"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",element);
-        Thread.sleep(3000);
-        driver.close();
+    @Test(enabled = false)
+    public void test_select_class()  {
+        driver.get("https://demoqa.com/select-menu");
+
+        WebElement selectcolor = driver.findElement(By.xpath("//select[@id='oldSelectMenu']"));
+
+        Select se = new Select(selectcolor);
+
+        se.selectByIndex(1);
+        se.selectByVisibleText("Purple");
+        se.selectByValue("Red");
+
+        se.deselectAll();
     }
 
     @Test
-    public void test_entertext() throws InterruptedException {
-        driver.get("https://www.saucedemo.com/");
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        //js.executeScript("document.getElementById('user-name').setAttribute('value','new user')");
-        WebElement element = driver.findElement(By.xpath("//input[@id='user-name']"));
-        js.executeScript("arguments[0].setAttribute('value','test_user_1')", element);
-        Thread.sleep(5000);
+    public void test_alerts() throws InterruptedException {
+        driver.get("https://demoqa.com/alerts");
+
+        driver.findElement(By.xpath("//button[@id='alertButton']")).click();
+
+        Thread.sleep(2000);
+        System.out.println(driver.switchTo().alert().getText());
+
+        driver.switchTo().alert().dismiss();
+        driver.switchTo().alert().accept();
+
+
+        Thread.sleep(2000);
     }
+
+
 
     @AfterTest
     public void aftertest() {
 
         driver.quit();
     }
+
 }
