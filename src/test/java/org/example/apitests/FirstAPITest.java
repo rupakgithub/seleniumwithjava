@@ -45,4 +45,19 @@ public class FirstAPITest {
                 .statusCode(201)
                 .body("job", equalTo("QA"));
     }
+
+    @Test
+    public void test_auth(){
+        given().auth().basic("admin","admin")
+                .get("https://the-internet.herokuapp.com/basic_auth").then().statusCode(200);
+    }
+
+    @Test
+    public void test_query_param(){
+        given()
+                .queryParam("CUSTOMER_ID","68195")
+                .queryParam("PASSWORD","1234!")
+                .queryParam("Account_No","1")
+                .when().get("http://demo.guru99.com/V4/sinkministatement.php").then().statusCode(200);
+    }
 }

@@ -22,3 +22,7 @@ pm.test("Verify value of data",()=>{
 pm.test("Verify last name of data",()=>{
     pm.expect(jsonData.data.last_name).to.eql("Bluth");
 })
+
+*************************
+
+curl --location 'http://demo.guru99.com/V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234!&Account_No=1'
