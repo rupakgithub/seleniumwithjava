@@ -37,7 +37,7 @@ public class FirstAPITest {
 
         System.out.println(request);
 
-        given().header("Content-Type","application/json")
+    given().header("Content-Type","application/json")
                 .body(request)
                 .when()
                 .post("https://reqres.in/api/users")
@@ -60,4 +60,18 @@ public class FirstAPITest {
                 .queryParam("Account_No","1")
                 .when().get("http://demo.guru99.com/V4/sinkministatement.php").then().statusCode(200);
     }
+
+    @Test
+    public void test_list(){
+        given().header("accept","application/json").get("https://generator.swagger.io/api/gen/clients").then()
+                .statusCode(200).body("data[0].id", equalTo(1));
+    }
+
+    @Test
+    public void code_test(){
+        String test = "AppLe";
+        int totalLower = test.replaceAll("[a-z]","").length();
+        System.out.println(totalLower);
+    }
+
 }
