@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/runner/CucumberRunnerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/runner/CucumberRunnerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/LoginPageDefinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/LoginPageDefinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +46,18 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.FirstAPITest.code_test">
-    <configuration name="FirstAPITest.bdd_validate_api" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CucumberRunnerTests">
+    <configuration name="CucumberRunnerTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.apitests.*" />
+          <option name="PATTERN" value="org.example.runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.apitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.apitests.FirstAPITest" />
-      <option name="METHOD_NAME" value="bdd_validate_api" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="org.example.runner" />
+      <option name="MAIN_CLASS_NAME" value="org.example.runner.CucumberRunnerTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -136,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CucumberRunnerTests" />
         <item itemvalue="TestNG.FirstAPITest.code_test" />
         <item itemvalue="TestNG.FirstAPITest.test_query_param" />
         <item itemvalue="TestNG.FirstAPITest.test_auth" />
         <item itemvalue="TestNG.FirstAPITest.post_create_users" />
-        <item itemvalue="TestNG.FirstAPITest.bdd_validate_api" />
       </list>
     </recent_temporary>
   </component>
