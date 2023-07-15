@@ -40,14 +40,10 @@ public class LoginPageDefinations {
 
     @Given("User is in Suacedemo homepage {string}")
     public void navigate_to_url(String url) {
-        System.out.println("in prestep");
         driver.get(url);
     }
-    @When("Logins to the system")
-    public void logins_to_the_system() {
-        System.out.println("test");
-    }
-    @Then("User enters correct username {string}")
+
+    @When("User enters correct username {string}")
     public void user_enters_correct_username(String username) {
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys(username);
 
@@ -68,6 +64,23 @@ public class LoginPageDefinations {
         }
         else {
             Assert.fail("Logo didn't appeared after waiting for 10 seconds");
+        }
+    }
+
+    @When("User enters username as {string} and password as {string}")
+    public void user_enters_username_as_and_password_as(String username, String password) {
+        driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys(username);
+        driver.findElement(By.cssSelector("input[id='password']")).sendKeys(password);
+    }
+    @Then("User should be able to see error message {string}")
+    public void user_should_be_able_to_see_error_message(String errormessage) {
+        driver.findElement(By.cssSelector("input[id='login-button']")).click();
+        String errortext = driver.findElement(By.xpath("//div[contains(@class,'error-message-container')]/h3[contains(text(),'"+errormessage+"')]")).getText();
+        if (errortext.contains(errormessage)){
+            Assert.assertTrue(true);
+        }
+        else {
+            Assert.fail("Text doesn't contains locked out user");
         }
     }
 
