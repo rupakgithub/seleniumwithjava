@@ -50,3 +50,8 @@ Modify docker container contents
 1. docker exec -it <container> sh
 2. cd /usr/share/nginx/html
 3. sed -i -e 's/nginx!/<<YOUR NAME>>/g' index.html
+
+************** CUCUMBER COMMANDS*************
+
+mvn clean test -Dcucumber.filter.tags="@InvalidLogin"
+mvn -DskipTests=true  package

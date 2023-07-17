@@ -1,6 +1,7 @@
 package org.example.stepdefinations;
 
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -17,6 +18,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class LoginPageDefinations {
@@ -83,6 +85,16 @@ public class LoginPageDefinations {
             Assert.fail("Text doesn't contains locked out user");
         }
     }
+
+    @When("User enters correct credentials")
+    public void user_enters_correct_credentials(DataTable credentials) {
+        List<List<String>> data = credentials.asLists(String.class);
+        for(List<String> columns: data){
+            driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys(columns.get(0));
+            driver.findElement(By.cssSelector("input[id='password']")).sendKeys(columns.get(1));
+        }
+    }
+
 
     @After
     public void teardown(){
