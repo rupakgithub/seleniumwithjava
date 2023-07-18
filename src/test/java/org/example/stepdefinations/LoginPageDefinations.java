@@ -2,32 +2,24 @@ package org.example.stepdefinations;
 
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
-import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.example.utils.SingletonBrowserClass;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.time.Duration;
-import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 
 public class LoginPageDefinations {
 
     private static SingletonBrowserClass sbc;
-    
+
     @BeforeAll
     public static void setup(){
          sbc = SingletonBrowserClass.getInstanceOfSingletonBrowserClass();
