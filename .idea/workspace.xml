@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/utils/SingletonBrowserClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MV_DOCKER.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MV_DOCKER.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/runner/CucumberRunnerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/runner/CucumberRunnerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/LoginPageDefinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/LoginPageDefinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.CucumberRunnerTests">
+  <component name="RunManager" selected="TestNG.Frameexample.test_nested_iframe">
+    <configuration name="TestSingleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.TestSingleton" />
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CucumberRunnerTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
@@ -82,17 +93,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstAPITest.post_create_users" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Frameexample.test_iframes" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.apitests.*" />
+          <option name="PATTERN" value="org.example.uitests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.apitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.apitests.FirstAPITest" />
-      <option name="METHOD_NAME" value="post_create_users" />
+      <option name="PACKAGE_NAME" value="org.example.uitests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Frameexample" />
+      <option name="METHOD_NAME" value="test_iframes" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,35 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstAPITest.test_auth" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Frameexample.test_nested_iframe" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.apitests.*" />
+          <option name="PATTERN" value="org.example.uitests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.apitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.apitests.FirstAPITest" />
-      <option name="METHOD_NAME" value="test_auth" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstAPITest.test_query_param" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.apitests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.apitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.apitests.FirstAPITest" />
-      <option name="METHOD_NAME" value="test_query_param" />
+      <option name="PACKAGE_NAME" value="org.example.uitests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Frameexample" />
+      <option name="METHOD_NAME" value="test_nested_iframe" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Frameexample.test_nested_iframe" />
+        <item itemvalue="TestNG.Frameexample.test_iframes" />
         <item itemvalue="TestNG.CucumberRunnerTests" />
+        <item itemvalue="Application.TestSingleton" />
         <item itemvalue="TestNG.FirstAPITest.code_test" />
-        <item itemvalue="TestNG.FirstAPITest.test_query_param" />
-        <item itemvalue="TestNG.FirstAPITest.test_auth" />
-        <item itemvalue="TestNG.FirstAPITest.post_create_users" />
       </list>
     </recent_temporary>
   </component>
