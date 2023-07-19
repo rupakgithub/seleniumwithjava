@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/LoginPageDefinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/LoginPageDefinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.Frameexample.test_nested_iframe">
+  <component name="RunManager" selected="TestNG.CucumberRunnerTests">
     <configuration name="TestSingleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.TestSingleton" />
       <module name="seleniumwithjava" />
@@ -129,9 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CucumberRunnerTests" />
         <item itemvalue="TestNG.Frameexample.test_nested_iframe" />
         <item itemvalue="TestNG.Frameexample.test_iframes" />
-        <item itemvalue="TestNG.CucumberRunnerTests" />
         <item itemvalue="Application.TestSingleton" />
         <item itemvalue="TestNG.FirstAPITest.code_test" />
       </list>
