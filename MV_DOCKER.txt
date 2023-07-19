@@ -1,5 +1,4 @@
 ************************************ MVN COMMANDS **************************************
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 mvn clean --> 
 mvn validate
 
