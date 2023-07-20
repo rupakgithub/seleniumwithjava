@@ -7,6 +7,7 @@ import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.example.utils.LocatorSingleton;
 import org.example.utils.SingletonBrowserClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,15 +15,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import java.time.Duration;
 import java.util.List;
+import java.util.Properties;
 
 
 public class LoginPageDefinations {
 
     private static SingletonBrowserClass sbc;
+    private static Properties prop;
+
 
     @BeforeAll
     public static void setup(){
          sbc = SingletonBrowserClass.getInstanceOfSingletonBrowserClass();
+         prop =LocatorSingleton.readPropertiesFile("src/test/resources/locators/login-locator.properties");
     }
 
 
@@ -34,12 +39,12 @@ public class LoginPageDefinations {
 
     @When("User enters correct username {string}")
     public void user_enters_correct_username(String username) {
-        sbc.getDriver().findElement(By.cssSelector("input[id='user-name']")).sendKeys(username);
+        sbc.getDriver().findElement(By.cssSelector(prop.getProperty("username"))).sendKeys(username);
 
     }
     @Then("User enters correct password {string}")
     public void user_enters_correct_password(String password) {
-        sbc.getDriver().findElement(By.cssSelector("input[id='password']")).sendKeys(password);
+        sbc.getDriver().findElement(By.cssSelector(prop.getProperty("password"))).sendKeys(password);
     }
 
     @Then("User should be able to login")

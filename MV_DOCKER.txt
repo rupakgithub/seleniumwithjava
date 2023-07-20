@@ -50,7 +50,7 @@ Modify docker container contents
 2. cd /usr/share/nginx/html
 3. sed -i -e 's/nginx!/<<YOUR NAME>>/g' index.html
 
-docker run -p 8080:8080 -p 50000:50000 -v "C:/Users/ASUS/Desktop/git example/temp/jenkinsvolumn":/var/jenkins_home jenkins/jenkins
+docker run -p 8080:8080 -p 50000:50000 -v "C:/Users/ASUS/Desktop/git example/temp/jenkinsvolumn":/var/jenkins_home customjenkinsmaven
 
 ************** CUCUMBER COMMANDS*************
 
