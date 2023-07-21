@@ -2,7 +2,20 @@
 Feature: All test cases for positive & negative scenarios
 
   Background:
-    Given User is in Suacedemo homepage "https://www.saucedemo.com/"
+    Given User is in HRM homepage "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+    When user enters username as "Admin" and password as "admin123"
+    Then User can login
+
+  @Form
+  Scenario Outline: Check username
+    Then find recrument
+    Then Select "<Job Title>" as "Job Title"
+    Then Select "<Vacancy>" as "Vacancy"
+
+
+    Examples:
+      |Job Title| Vacancy|
+      |Database Administrator|Senior QA Lead|
 
  @validLogin @Regress @Login
   Scenario: Login with positive/correct credentials

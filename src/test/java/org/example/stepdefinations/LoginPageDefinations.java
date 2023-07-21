@@ -10,6 +10,9 @@ import io.cucumber.java.en.When;
 import org.example.utils.LocatorSingleton;
 import org.example.utils.SingletonBrowserClass;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -85,6 +88,47 @@ public class LoginPageDefinations {
             sbc.getDriver().findElement(By.cssSelector("input[id='user-name']")).sendKeys(columns.get(0));
             sbc.getDriver().findElement(By.cssSelector("input[id='password']")).sendKeys(columns.get(1));
         }
+    }
+
+    @Then("find recrument")
+    public void find_recrument() {
+        sbc.getDriver().findElement(By.xpath("//span[text()='Recruitment']")).click();
+    }
+
+    @Then("Select {string} as {string}")
+    public void select_job_title( String data, String title)throws InterruptedException {
+        String DD = prop.getProperty("HRM_recruitment_DD").replace("<<Var1>>",title);
+        String DText = prop.getProperty("HRM_recruiment_text").replace("<<Var1>>",title);
+
+        String title1 = "";
+
+        Actions actions = new Actions(sbc.getDriver());
+        WebElement jobTitle = sbc.getDriver().findElement(By.xpath(DD));
+        WebDriverWait wait = new WebDriverWait(sbc.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(jobTitle));
+        actions.click(jobTitle).build().perform();
+        Thread.sleep(1000);
+
+
+        for (int i = 0; i < 200; i++) {
+            title1 = sbc.getDriver().findElement(By.xpath(DText)).getText();
+            System.out.println(title1);
+            Thread.sleep(500);
+            if (title1.equals(data)) {
+                sbc.getDriver().findElement(By.xpath(DText)).click();
+                break;
+            }
+            actions.sendKeys(Keys.ARROW_DOWN).build().perform();
+
+        }
+
+    }
+
+    @Then("User can login")
+    public void user_can_login() throws InterruptedException{
+        sbc.getDriver().findElement(By.xpath("//button[text()=' Login ']")).click();
+        Thread.sleep(1000);
+
     }
 
 
