@@ -58,3 +58,8 @@ docker run -p 8080:8080 -p 50000:50000 -v "C:/Users/ASUS/Desktop/git example/tem
 
 mvn clean test -Dcucumber.filter.tags="@InvalidLogin"
 mvn -DskipTests=true  package
+
+
+************  JENKINS INSTALLATION *****************
+
+java -jar jenkins.war  --enable-future-java --httpPort=9090
