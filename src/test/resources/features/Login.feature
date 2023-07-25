@@ -2,9 +2,8 @@
 Feature: All test cases for positive & negative scenarios
 
   Background:
-    Given User is in HRM homepage "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-    When user enters username as "Admin" and password as "admin123"
-    Then User can login
+    Given User is in Suacedemo homepage "https://www.saucedemo.com/"
+
 
   @Form
   Scenario Outline: Check username
