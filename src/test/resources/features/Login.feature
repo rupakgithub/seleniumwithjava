@@ -2,7 +2,7 @@
 Feature: All test cases for positive & negative scenarios
 
   Background:
-    Given User is in Suacedemo homepage "https://www.saucedemo.com/"
+    Given User is in "Suacedemo" homepage "https://www.saucedemo.com/"
 
 
   @Form
