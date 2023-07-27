@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="Added locator for drop down">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/runner/CucumberRunnerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/runner/CucumberRunnerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/HRMStepDefinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/HRMStepDefinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/commonStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepdefinations/commonStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HRM.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HRM.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/FluentwaitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/FluentwaitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
