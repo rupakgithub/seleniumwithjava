@@ -9,4 +9,10 @@ public class HRMStepDefinations {
 
     }
 
+    @Given("Take {string} name as {string}")
+    public void take_name_as(String a, String b) {
+        System.out.println(a);
+        System.out.println(b);
+    }
+
 }

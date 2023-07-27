@@ -6,3 +6,4 @@ Feature: All test cases for positive & negative scenarios
 
   Scenario: Test
     Given User is in "HRM" homepage
+

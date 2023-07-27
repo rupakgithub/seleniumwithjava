@@ -21,7 +21,7 @@ public class commonStepDefinitions {
         StaticInstances.sbc.getDriver().quit();
     }
 
-    @After
+    @AfterStep
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()){
             System.out.println("Scenario "+scenario.getName()+" is failed");
