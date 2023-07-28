@@ -63,3 +63,5 @@ mvn -DskipTests=true  package
 ************  JENKINS INSTALLATION *****************
 
 java -jar jenkins.war  --enable-future-java --httpPort=9090
+
+*************** Test command... please ignore*************
