@@ -63,14 +63,20 @@ public class FluentwaitTest {
         WebElement saveButton = driver.findElement(By.xpath("(//button[@type='submit'])[1]"));
         wait.until(ExpectedConditions.visibilityOf(saveButton));
         Thread.sleep(3000);
-        By message = By.xpath("//div[@id='oxd-toaster_1']//p[contains(@class,'toast-message')]");
+        String message_xpath = "//div[@id='oxd-toaster_1']//p[contains(@class,'toast-message')]";
+        //By message = By.xpath("//div[@id='oxd-toaster_1']//p[contains(@class,'toast-message')]");
         saveButton.click();
 
-        fluentwait.until(ExpectedConditions.visibilityOfElementLocated(message));
-        String messagetext = driver.findElement(message).getText();
+        /*fluentwait.until(ExpectedConditions.visibilityOfElementLocated(message));
+        String messagetext = driver.findElement(message).getText();*/
+        fluentwait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(message_xpath)));
+        String messageText = driver.findElement(By.xpath(message_xpath)).getText();
+
+
+
         System.out.println("Element located");
         Thread.sleep(1000);
-        if (messagetext.contains("Successfully Updated")){
+        if (messageText.contains("Successfully Updated")){
             Assert.assertTrue(true);
         } else {
             Assert.fail("Success message not present");
