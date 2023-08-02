@@ -1,0 +1,13 @@
+Create table MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn);
+
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (102,5950,5822,'Are you available for 15 minutes?','2022-08-05');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (145,7853,4322,'That meeting is scheduled for next week.','2022-08-10');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (214,5950,4365,'Still waiting for client approval.','2022-08-12');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (334,7596,4225,'It would require changes in the code.','2022-06-15');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (456,4225,7354,'Can we have a quick call?','2022-08-17');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (596,4225,5822,'Everyone has joined.','2022-08-19');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (859,9632,5950,'Check this candidate''s profile','2022-07-20');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (963,7596,5822,'Thank you!','2022-08-22');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (1025,4225,7596,'Your efforts are appreciated!','2022-08-23');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (1156,4225,7853,'Will be sending this by EOD','2022-08-24');
+insert into MessageDetails (MessageId, SenderId, ReceverId, Content, MessageSentOn) values (1269,9632,4225,'Schedule it for tomorrow','2022-10-15');

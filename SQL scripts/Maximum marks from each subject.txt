@@ -1,0 +1,9 @@
+Create table Student (Name string, Subject string, Marks int);
+
+insert into Student (Name, Subject, Marks) values ('A', 'M', 20);
+insert into Student (Name, Subject, Marks) values ('B', 'M', 25);
+insert into Student (Name, Subject, Marks) values ('C', 'M', 30);
+insert into Student (Name, Subject, Marks) values ('D', 'C', 44);
+insert into Student (Name, Subject, Marks) values ('E', 'C', 45);
+insert into Student (Name, Subject, Marks) values ('F', 'C', 46);
+insert into Student (Name, Subject, Marks) values ('G', 'H', 20);

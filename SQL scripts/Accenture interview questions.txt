@@ -1,0 +1,18 @@
+Create table ProductDetails (productId int, Category string, ProductName string);
+
+insert into ProductDetails (productId, Category, ProductName) values (1, 'Mobile','Iphone');
+insert into ProductDetails (productId, Category, ProductName) values (2, NULL,'Samsung Galaxy');
+insert into ProductDetails (productId, Category, ProductName) values (3, NULL,'Vivo');
+insert into ProductDetails (productId, Category, ProductName) values (4, NULL,'Oppo');
+insert into ProductDetails (productId, Category, ProductName) values (5, NULL,'Infinica');
+insert into ProductDetails (productId, Category, ProductName) values (6, 'Jeans','Levis');
+insert into ProductDetails (productId, Category, ProductName) values (7, NULL,'Tommy');
+insert into ProductDetails (productId, Category, ProductName) values (8, NULL,'Wrangler');
+insert into ProductDetails (productId, Category, ProductName) values (9, 'Laptop','Dell');
+insert into ProductDetails (productId, Category, ProductName) values (10, NULL,'Asus');
+insert into ProductDetails (productId, Category, ProductName) values (11, NULL,'Apple');
+insert into ProductDetails (productId, Category, ProductName) values (12, NULL,'Lenovo');
+insert into ProductDetails (productId, Category, ProductName) values (13, 'Shirt','Louise');
+insert into ProductDetails (productId, Category, ProductName) values (14, NULL,'Pepe jeans');
+insert into ProductDetails (productId, Category, ProductName) values (15, NULL,'Blackberry');
+insert into ProductDetails (productId, Category, ProductName) values (16, NULL,'Arrow');
