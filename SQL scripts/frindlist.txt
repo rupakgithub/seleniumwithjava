@@ -1,0 +1,21 @@
+CREATE TABLE tableName 
+(
+    FriendName	VARCHAR(512),
+    City	VARCHAR(512),
+    State	VARCHAR(512),
+    Country	VARCHAR(512)
+);
+
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('María', 'Acapulco', 'Guerrero', 'México');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Fernando', 'Caracas', 'Distrito Capital', 'Venezuela');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Gerson', 'Medellín', 'Antioquía', 'Colombia');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Mónica', 'Bogotá', 'Cundinamarca', 'Colombia');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Paul', 'Bogotá', 'Cundinamarca', 'Colombia');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Kevin', 'Lexington', 'Kentucky', 'USA');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Cecilia', 'Godoy Cruz', 'Mendoza', 'Argentina');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Pablo', 'Atlántida', 'Canelones', 'Uruguay');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Andrea', 'Cdad. Mendoza', 'Mendoza', 'Argentina');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Marlon', 'Sao Paulo', 'Sao Paulo', 'Brasil');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Joao', 'Rio de Janeiro', 'Rio de Janeiro', 'Brasil');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Andrés', 'Bariloche', 'Río Negro', 'Argentina');
+INSERT INTO tableName (FriendName, City, State, Country) VALUES ('Mariano', 'Miami', 'Florida', 'USA');
