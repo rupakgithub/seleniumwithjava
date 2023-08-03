@@ -1,0 +1,23 @@
+CREATE TABLE employee 
+(
+    employee_ID	INT,
+    salary	INT,
+    department_ID	VARCHAR(512)
+);
+
+INSERT INTO employee (employee_ID, salary, department_ID) VALUES ('100', '24000', '1');
+INSERT INTO employee (employee_ID, salary, department_ID) VALUES ('101', '17000', '1');
+INSERT INTO employee (employee_ID, salary, department_ID) VALUES ('103', '10000', '1');
+INSERT INTO employee (employee_ID, salary, department_ID) VALUES ('104', '9000', '2');
+INSERT INTO employee (employee_ID, salary, department_ID) VALUES ('105', '11000', '2');
+INSERT INTO employee (employee_ID, salary, department_ID) VALUES ('106', '16000', '3');
+
+CREATE TABLE department 
+(
+    department_ID	VARCHAR(512),
+    department_name	VARCHAR(512)
+);
+
+INSERT INTO department (department_ID, department_name) VALUES ('1', 'Accounts');
+INSERT INTO department (department_ID, department_name) VALUES ('1', 'Marketing');
+INSERT INTO department (department_ID, department_name) VALUES ('2', 'IT');
