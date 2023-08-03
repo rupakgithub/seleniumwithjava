@@ -21,3 +21,11 @@ CREATE TABLE department
 INSERT INTO department (department_ID, department_name) VALUES ('1', 'Accounts');
 INSERT INTO department (department_ID, department_name) VALUES ('2', 'Marketing');
 INSERT INTO department (department_ID, department_name) VALUES ('3', 'IT');
+
+SOLUTION***************************************
+
+SELECT e.department_ID, d.department_name, round(AVG(salary),2)
+from employee e 
+INNER join department d 
+ON e.department_ID = d.department_ID
+GROUP By e.department_ID,d.department_name
