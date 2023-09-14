@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="Added locator for drop down">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/SeleniumTEsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/SeleniumTEsts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/Testngprac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Testngprac.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SeleniumTEsts.firsttest">
+  <component name="RunManager" selected="TestNG.Testngprac.test1">
     <configuration name="SeleniumTEsts (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
@@ -137,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SeleniumTEsts.firsttest" />
-        <item itemvalue="TestNG.Testngprac.test2" />
         <item itemvalue="TestNG.Testngprac.test1" />
         <item itemvalue="TestNG.Testngprac" />
+        <item itemvalue="TestNG.SeleniumTEsts.firsttest" />
+        <item itemvalue="TestNG.Testngprac.test2" />
         <item itemvalue="TestNG.SeleniumTEsts (1)" />
       </list>
     </recent_temporary>

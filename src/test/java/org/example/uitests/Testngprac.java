@@ -16,10 +16,6 @@ public class Testngprac {
         System.out.println("beforetest");
     }
 
-    @BeforeStep
-    public void beforestep(){
-        System.out.println("beforestep");
-    }
 
     @Test
     public void test1(){
@@ -35,12 +31,7 @@ public class Testngprac {
     public void aftertest(){
         System.out.println("aftertest");
     }
-
-    @AfterStep
-    public void afterstep(){
-        System.out.println("afterstep");
-    }
-
+    
     @AfterMethod
     public void aftermethod(){
         System.out.println("aftermethod");
