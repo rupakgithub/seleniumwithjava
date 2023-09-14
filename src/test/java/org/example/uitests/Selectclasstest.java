@@ -35,7 +35,7 @@ public class Selectclasstest {
 
     }
 
-    @Test(enabled = false)
+    @Test()
     public void test_select_class()  {
         driver.get("https://demoqa.com/select-menu");
 

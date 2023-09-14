@@ -7,6 +7,9 @@
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="Added locator for drop down">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/SeleniumTEsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/SeleniumTEsts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,30 +46,17 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.FluentwaitTest.fluentwaittest">
-    <configuration name="TestSingleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.TestSingleton" />
+  <component name="RunManager" selected="TestNG.SeleniumTEsts.firsttest">
+    <configuration name="SeleniumTEsts (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.uitests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CucumberRunnerTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.runner" />
-      <option name="MAIN_CLASS_NAME" value="org.example.runner.CucumberRunnerTests" />
+      <option name="PACKAGE_NAME" value="org.example.uitests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.uitests.SeleniumTEsts" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -74,7 +64,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FluentwaitTest.fluentwaittest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTEsts.firsttest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +73,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.uitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.uitests.FluentwaitTest" />
-      <option name="METHOD_NAME" value="fluentwaittest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.uitests.SeleniumTEsts" />
+      <option name="METHOD_NAME" value="firsttest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -92,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Frameexample.test_iframes" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Testngprac" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -101,8 +91,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.uitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Frameexample" />
-      <option name="METHOD_NAME" value="test_iframes" />
+      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Testngprac" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testngprac.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.uitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.uitests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Testngprac" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -110,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Frameexample.test_nested_iframe" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Testngprac.test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +126,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.uitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Frameexample" />
-      <option name="METHOD_NAME" value="test_nested_iframe" />
+      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Testngprac" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FluentwaitTest.fluentwaittest" />
-        <item itemvalue="TestNG.CucumberRunnerTests" />
-        <item itemvalue="TestNG.Frameexample.test_nested_iframe" />
-        <item itemvalue="TestNG.Frameexample.test_iframes" />
-        <item itemvalue="Application.TestSingleton" />
+        <item itemvalue="TestNG.SeleniumTEsts.firsttest" />
+        <item itemvalue="TestNG.Testngprac.test2" />
+        <item itemvalue="TestNG.Testngprac.test1" />
+        <item itemvalue="TestNG.Testngprac" />
+        <item itemvalue="TestNG.SeleniumTEsts (1)" />
       </list>
     </recent_temporary>
   </component>

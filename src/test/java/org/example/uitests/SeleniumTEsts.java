@@ -1,5 +1,6 @@
 package org.example.uitests;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -39,7 +39,7 @@ public class SeleniumTEsts {
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void firsttest() {
         driver.get("https://www.saucedemo.com/");
 
@@ -52,7 +52,7 @@ public class SeleniumTEsts {
         }
     }
 
-    @Test(priority = 0)
+    //@Test(priority = 0)
     public void performance_glitch_login_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("performance_glitch_user");
@@ -72,7 +72,7 @@ public class SeleniumTEsts {
         //Thread.sleep(3000);
     }
 
-    @Test(priority = 1)
+    //@Test(priority = 1)
     public void positive_login_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("locked_out_user");
@@ -89,7 +89,7 @@ public class SeleniumTEsts {
         //Thread.sleep(3000);
     }
 
-    @Test(priority = 2)
+    //@Test(priority = 2)
     public void cart_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("standard_user");
@@ -114,7 +114,7 @@ public class SeleniumTEsts {
 
     }
 
-    @Test(priority = 3)
+    //@Test(priority = 3)
     public void verify_total_items() throws InterruptedException {
         driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
        List<WebElement> element = driver.findElements(By.xpath("//div[@class='cart_list']/div[@class='cart_item']"));
@@ -127,7 +127,7 @@ public class SeleniumTEsts {
     }
 
 
-    @Test(priority = 4)
+    //@Test(priority = 4)
     public void verify_total_amount() throws InterruptedException {
         driver.findElement(By.xpath("//button[@id='checkout']")).click();
         //Thread.sleep(500);
