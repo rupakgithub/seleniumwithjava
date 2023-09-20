@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="Added locator for drop down">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/Frameexample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Frameexample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/MouseHoverTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/MouseHoverTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/SeleniumTEsts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/SeleniumTEsts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/Testngprac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Testngprac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/WidgetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/WidgetsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +36,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;test__feature__branch&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
