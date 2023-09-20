@@ -13,6 +13,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.Collections;
+import java.util.Hashtable;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class Selectclasstest {
@@ -22,6 +24,13 @@ public class Selectclasstest {
     @BeforeTest
     public void beforetest() {
         WebDriverManager.chromedriver().setup();
+
+        /*Map<String, Object> preferences = new Hashtable<String, Object>();
+
+        preferences.put("download.default_directory", "C://");
+
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("prefs", preferences);*/
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--remote-allow-origins=*");
         ops.addArguments("--start-maximized");
@@ -31,26 +40,28 @@ public class Selectclasstest {
         ops.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         driver = new ChromeDriver(ops);
         //implicit wait
-        driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS).implicitlyWait(4, TimeUnit.SECONDS);
 
     }
 
-    @Test()
-    public void test_select_class()  {
+    @Test(priority = 2)
+    public void test_select_class() throws InterruptedException {
         driver.get("https://demoqa.com/select-menu");
 
         WebElement selectcolor = driver.findElement(By.xpath("//select[@id='oldSelectMenu']"));
 
         Select se = new Select(selectcolor);
 
-        se.selectByIndex(1);
+        //se.selectByIndex(1);
         se.selectByVisibleText("Purple");
-        se.selectByValue("Red");
+        //se.selectByValue("Red");
 
-        se.deselectAll();
+        Thread.sleep(3000);
+
+        //se.deselectAll();
     }
 
-    @Test
+    @Test(priority = -11)
     public void test_alerts() throws InterruptedException {
         driver.get("https://demoqa.com/alerts");
 

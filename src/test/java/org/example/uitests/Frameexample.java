@@ -43,6 +43,7 @@ public class Frameexample {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("frame1"));
 
+
         String framecontent = driver.findElement(By.xpath("//h1[@id='sampleHeading']")).getText();
 
         System.out.println(framecontent);

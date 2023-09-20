@@ -145,10 +145,10 @@ public class WidgetsTest {
         driver.switchTo().frame(driver.findElement(By.className("demo-frame")));
         Thread.sleep(2000);
 
-        driver.findElement(By.xpath("//input[@id='tags']")).sendKeys("#");
+        driver.findElement(By.xpath("//input[@id='tags']")).sendKeys("C");
 
         String texttobeclicked = "Clojure";
-        WebElement autooptions = autooptions = driver.findElement(By.id("ui-id-1"));
+        WebElement autooptions  = driver.findElement(By.id("ui-id-1"));
 
         try {
             wait.until(ExpectedConditions.visibilityOf(autooptions));

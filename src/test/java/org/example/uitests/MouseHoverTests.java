@@ -41,13 +41,12 @@ public class MouseHoverTests {
 
     }
 
-   // @Test
+   @Test
     public void hover_test() throws InterruptedException {
         driver.get("https://www.spicejet.com/");
         Actions actions = new Actions(driver);
         WebElement spicejet = driver.findElement(By.xpath("(//div[text()='SpiceClub'])[1]"));
         actions.moveToElement(spicejet).build().perform();
-
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@href,'/home#program')]")));
 
@@ -71,7 +70,7 @@ public class MouseHoverTests {
 
     }
 
-    @Test(enabled = false)
+    @Test
     public void open_in_new_link_test() throws InterruptedException {
         driver.get("https://www.tutorialspoint.com/about/about_careers.htm");
         String term = Keys.chord(Keys.CONTROL, Keys.ENTER);

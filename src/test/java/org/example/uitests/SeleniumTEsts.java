@@ -26,7 +26,7 @@ public class SeleniumTEsts {
 
     @BeforeTest
     public void beforetest() {
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().clearDriverCache().driverVersion("").setup();
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--remote-allow-origins=*");
         ops.addArguments("--start-maximized");
@@ -52,7 +52,7 @@ public class SeleniumTEsts {
         }
     }
 
-    //@Test(priority = 0)
+    @Test(priority = 0)
     public void performance_glitch_login_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("performance_glitch_user");
@@ -72,7 +72,7 @@ public class SeleniumTEsts {
         //Thread.sleep(3000);
     }
 
-    //@Test(priority = 1)
+    @Test(priority = 1)
     public void positive_login_scenario() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.cssSelector("input[id='user-name']")).sendKeys("locked_out_user");
@@ -137,7 +137,7 @@ public class SeleniumTEsts {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'error-message-container')]/h3")));
 
-       /* FluentWait wait = new FluentWait(driver);
+        /*FluentWait wait = new FluentWait(driver);
         wait.withTimeout(Duration.ofSeconds(10));
         wait.pollingEvery(Duration.ofMillis(1));
         wait.ignoring(NoSuchElementException.class);

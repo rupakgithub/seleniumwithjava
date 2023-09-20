@@ -31,7 +31,7 @@ public class Testngprac {
     public void aftertest(){
         System.out.println("aftertest");
     }
-    
+
     @AfterMethod
     public void aftermethod(){
         System.out.println("aftermethod");
