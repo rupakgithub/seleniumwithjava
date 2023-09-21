@@ -13,8 +13,9 @@ public class Advancejava1 {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             System.out.println("There is InterruptedException");
-        } catch (FileNotFoundException e2) {
-            System.out.println("There is file ot found exception");
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
         } finally {
             System.out.println("There failed beacuse file is not available");
         }

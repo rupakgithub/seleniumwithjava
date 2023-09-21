@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="Added locator for drop down">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/MouseHoverTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/MouseHoverTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Advancejava1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Advancejava1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +43,42 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.WidgetsTest.test_autocomplete">
-    <configuration name="Javascriptexecutortests.test_entertext" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Constructorexample">
+    <configuration name="Constructorexample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Constructorexample" />
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.uitests.*" />
+          <option name="PATTERN" value="org.example.advancejava.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.uitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.uitests.Javascriptexecutortests" />
-      <option name="METHOD_NAME" value="test_entertext" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Constructorexample (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Constructorexample" />
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.advancejava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Constructorexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Constructorexample" />
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.advancejava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -73,24 +94,6 @@
       <option name="PACKAGE_NAME" value="org.example.uitests" />
       <option name="MAIN_CLASS_NAME" value="org.example.uitests.MouseHoverTests" />
       <option name="METHOD_NAME" value="open_in_new_link_test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MouseHoverTests.test_new_window" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.uitests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.uitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.uitests.MouseHoverTests" />
-      <option name="METHOD_NAME" value="test_new_window" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,31 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WidgetsTest.test_file_upload" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.uitests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.uitests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.uitests.WidgetsTest" />
-      <option name="METHOD_NAME" value="test_file_upload" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WidgetsTest.test_autocomplete" />
-        <item itemvalue="TestNG.WidgetsTest.test_file_upload" />
-        <item itemvalue="TestNG.MouseHoverTests.test_new_window" />
+        <item itemvalue="Application.Constructorexample" />
+        <item itemvalue="Application.Constructorexample (2)" />
+        <item itemvalue="Application.Constructorexample (1)" />
         <item itemvalue="TestNG.MouseHoverTests.open_in_new_link_test" />
-        <item itemvalue="TestNG.Javascriptexecutortests.test_entertext" />
+        <item itemvalue="TestNG.WidgetsTest.test_autocomplete" />
       </list>
     </recent_temporary>
   </component>
