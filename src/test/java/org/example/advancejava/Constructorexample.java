@@ -22,8 +22,8 @@ class Animal{
         System.out.println("The name is: "+name);
         System.out.println("The id is: "+id);
     }
-    Animal(String name, int id){
-        this.name = name;
+    Animal(String hgh, int id){
+        name = hgh;
         this.id = id;
     }
 
