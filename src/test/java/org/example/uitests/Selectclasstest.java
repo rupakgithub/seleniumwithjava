@@ -45,7 +45,7 @@ public class Selectclasstest {
     }
 
     @Test(priority = 2)
-    public void test_select_class() throws InterruptedException {
+    public void test_select_class() throws Exception {
         driver.get("https://demoqa.com/select-menu");
 
         WebElement selectcolor = driver.findElement(By.xpath("//select[@id='oldSelectMenu']"));

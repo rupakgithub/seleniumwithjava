@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="Added locator for drop down">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Advancejava1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Advancejava1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Constructorexample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Constructorexample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Encapsulationexample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Encapsulationexample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Inheritanceexample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Inheritanceexample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/Selectclasstest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Singeltonclassconcept">
+  <component name="RunManager" selected="Application.GenericsExample">
     <configuration name="Constructorexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Constructorexample" />
       <module name="seleniumwithjava" />
@@ -60,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Inheritanceexample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Inheritanceexample" />
+    <configuration name="GenericsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.GenericsExample" />
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -73,8 +70,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Inheritanceexample (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Inheritanceexample" />
+    <configuration name="Interfaceexample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Interfaceexample" />
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.advancejava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Interfaceexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Interfaceexample" />
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -99,31 +109,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Advancejava1.checkingng" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.advancejava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.advancejava" />
-      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Advancejava1" />
-      <option name="METHOD_NAME" value="checkingng" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GenericsExample" />
+        <item itemvalue="Application.Interfaceexample" />
+        <item itemvalue="Application.Interfaceexample (1)" />
         <item itemvalue="Application.Singeltonclassconcept" />
         <item itemvalue="Application.Constructorexample" />
-        <item itemvalue="TestNG.Advancejava1.checkingng" />
-        <item itemvalue="Application.Inheritanceexample (2)" />
-        <item itemvalue="Application.Inheritanceexample (1)" />
       </list>
     </recent_temporary>
   </component>
