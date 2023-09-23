@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="Added locator for drop down">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Advancejava1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Advancejava1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Constructorexample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Constructorexample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Encapsulationexample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Encapsulationexample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Inheritanceexample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/advancejava/Inheritanceexample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,20 +46,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Inheritanceexample (2)">
-    <configuration name="Constructorexample (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Constructorexample" />
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.advancejava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Singeltonclassconcept">
     <configuration name="Constructorexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Constructorexample" />
       <module name="seleniumwithjava" />
@@ -96,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Inheritanceexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Inheritanceexample" />
+    <configuration name="Singeltonclassconcept" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Singeltonclassconcept" />
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -109,13 +99,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Advancejava1.checkingng" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.advancejava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.advancejava" />
+      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Advancejava1" />
+      <option name="METHOD_NAME" value="checkingng" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Singeltonclassconcept" />
+        <item itemvalue="Application.Constructorexample" />
+        <item itemvalue="TestNG.Advancejava1.checkingng" />
         <item itemvalue="Application.Inheritanceexample (2)" />
         <item itemvalue="Application.Inheritanceexample (1)" />
-        <item itemvalue="Application.Inheritanceexample" />
-        <item itemvalue="Application.Constructorexample" />
-        <item itemvalue="Application.Constructorexample (2)" />
       </list>
     </recent_temporary>
   </component>

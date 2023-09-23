@@ -16,7 +16,7 @@ public class Encapsulationexample {
 
 class Vehical{
 
-    final int id = 4755;
+    final private int id = 4755;
     private String company;
     private String model;
     private String registration;

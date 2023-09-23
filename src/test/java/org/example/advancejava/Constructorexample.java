@@ -4,12 +4,14 @@ public class Constructorexample {
 
     public static void main(String[] args) {
         Animal animal = new Animal("Tim", 1);
-        animal.display();
+        //animal.display();
 
         Animal animal2 = new Animal("William", 2);
-        animal2.display();
+       // animal2.display();
 
         Animal animal3 = new Animal();
+
+        System.out.println(animal2 == animal);
     }
 }
 

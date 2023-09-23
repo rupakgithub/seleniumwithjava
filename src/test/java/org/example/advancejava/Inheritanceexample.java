@@ -6,6 +6,9 @@ public class Inheritanceexample {
         color.wing();
         color.color();
         //color.shade();
+
+        Bird bird = new Bird();
+        bird.wing();
     }
 }
 
@@ -16,15 +19,16 @@ class Bird{
 }
 
 class Parrot extends Bird{
-
+ String name = "Parrot";
     void color(){
         System.out.println("have green color");
     }
 }
 
 class Color extends Parrot {
-
+String name = "Color";
     void color(){
+
         super.color();
         System.out.println("have green color from color class");
     }
