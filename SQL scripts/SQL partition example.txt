@@ -37,3 +37,9 @@ select * from (
   from empdetails
 )
 where salary > avgsalary;
+
+QUESTION: Find max salary by depart using self join
+
+select e.* from (select deptid, max(salary) maxsal from empdetails GROUP by deptid) d
+join empdetails e 
+on e.deptid = d.deptid and e.salary = d.maxsal;
