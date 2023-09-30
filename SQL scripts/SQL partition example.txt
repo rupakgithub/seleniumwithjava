@@ -29,3 +29,11 @@ select * from empdetails where (deptid, salary) in
   select deptid, MAX(salary)
 from empdetails
 GROUP By deptid)
+
+QUESTION: Salary greater than depart avg
+
+select * from (
+  select *, AVG(salary) OVER(PARTITION by deptid) as avgsalary
+  from empdetails
+)
+where salary > avgsalary;
