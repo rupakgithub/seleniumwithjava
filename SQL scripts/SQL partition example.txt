@@ -3,10 +3,12 @@ CREATE TABLE empdetails (
   EmpName VARCHAR(50),
   Salary int
 );
+
 INSERT INTO empdetails (DeptID, EmpName, Salary) VALUES
 ('Engg', 'Sam', 1000),
-('Eng','Smith', 2000),
-('Engg', 'Denis', 1500),
+('Engg','Smith', 2000),
+('HR', 'Denis', 1500),
 ('HR','Danny', 3000),
+('HR','Jay', 2100),
 ('IT','David', 2000),
 ('IT','John', 3000);
