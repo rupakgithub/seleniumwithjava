@@ -12,3 +12,20 @@ INSERT INTO empdetails (DeptID, EmpName, Salary) VALUES
 ('HR','Jay', 2100),
 ('IT','David', 2000),
 ('IT','John', 3000);
+
+***************** ANSWER ********************
+ANSWER1:
+
+select * from (
+  select *, DENSE_RANK() OVER(PARTITION by deptid ORDER by salary DESC) as r
+  from empdetails
+)
+where r = 1;
+
+ANSWER2:
+
+select * from empdetails where (deptid, salary) in 
+(
+  select deptid, MAX(salary)
+from empdetails
+GROUP By deptid)
