@@ -35,3 +35,14 @@ insert into AzureCostomers (CustomerId, ProductId, Amount) values (4, 2,6800);
 select DISTINCT(productcategory), avg(amount) over(PARTITION By productcategory) from azureproducts p 
 join azurecostomers c 
 on p.productid = c.productid;
+
+2. Find the product id which is most used by the customers
+
+ with cte as (
+  select c.productid, count(customerid) cus from azureproducts p 
+  join azurecostomers c 
+  on p.productid = c.productid
+  GROUP By c.productid
+  )
+  
+  select productid, cus from cte where cus in (select max(cus) from cte)
