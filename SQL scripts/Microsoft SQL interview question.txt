@@ -1,4 +1,4 @@
-Create table AzureProducts (ProductId int, ProductCategory string, ProductName string);
+Create table AzureProducts (ProductId int, ProductCategory VARCHAR(100), ProductName VARCHAR(100));
 
 insert into AzureProducts (ProductId, ProductCategory, ProductName) values (1, 'Databases','Azure cache for Redis');
 insert into AzureProducts (ProductId, ProductCategory, ProductName) values (2, 'Databases','Azure Database Migration Service');
@@ -29,3 +29,9 @@ insert into AzureCostomers (CustomerId, ProductId, Amount) values (3, 6,3000);
 insert into AzureCostomers (CustomerId, ProductId, Amount) values (3, 9,6000);
 insert into AzureCostomers (CustomerId, ProductId, Amount) values (4, 2,6800);
 
+******************** QUESTION**************
+1. Find the average spending of customers over each categories
+
+select DISTINCT(productcategory), avg(amount) over(PARTITION By productcategory) from azureproducts p 
+join azurecostomers c 
+on p.productid = c.productid;
