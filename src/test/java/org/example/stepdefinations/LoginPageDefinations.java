@@ -31,11 +31,11 @@ public class LoginPageDefinations {
     }*/
 
 
-    @Given("User is in {string} homepage {string}")
+   /* @Given("User is in {string} homepage {string}")
     public void navigate_to_url(String site, String url) {
         StaticInstances.sbc.getDriver().get(url);
 
-    }
+    }*/
 
     @When("User enters correct username {string}")
     public void user_enters_correct_username(String username) {
@@ -127,6 +127,7 @@ public class LoginPageDefinations {
         Thread.sleep(1000);
 
     }
+
 
 
    /* @AfterAll

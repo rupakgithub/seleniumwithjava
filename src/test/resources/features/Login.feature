@@ -15,6 +15,7 @@ Feature: All test cases for positive & negative scenarios
     Examples:
       |Job Title| Vacancy|
       |Database Administrator|Senior QA Lead|
+      |Database Administrator|Senior QA Lead|
 
  @validLogin @Regress @Login
   Scenario: Login with positive/correct credentials
@@ -22,7 +23,7 @@ Feature: All test cases for positive & negative scenarios
     And User enters correct password "secret_sauce"
     Then User should be able to login
 
-   @datatabletest
+  @datatabletest
   Scenario: Login with positive/correct credentials
     When User enters correct credentials
     |standard_user|secret_sauce|
