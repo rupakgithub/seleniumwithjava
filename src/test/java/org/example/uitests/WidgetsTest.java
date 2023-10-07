@@ -171,6 +171,50 @@ public class WidgetsTest {
 
     }
 
+    @Test
+    public void openHRM_add_user() throws InterruptedException {
+        String user_role_to_be_select = "ESS";
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/admin/saveSystemUser");
+        driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("admin123");
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+        Thread.sleep(1000);
+
+        driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div")).click();
+
+        /*
+         * Method 1
+         */
+
+        Thread.sleep(1000);
+
+        WebElement elem = driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div//div[@role='option']/span[text()='ESS']"));
+
+        elem.click();
+
+        //String d = elem.getAttribute("innerHTML");
+
+        /*
+         * Method 2
+         */
+
+//        Actions act = new Actions(driver);
+//        while (true){
+//            act.sendKeys(Keys.DOWN).perform();
+//            Thread.sleep(1000);
+//            WebElement elem = driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div//div[@role='option' and contains(@class, 'select-option --focused')]"));
+//            String userroleselected = elem.getText();
+//            if (userroleselected.equals(user_role_to_be_select)){
+//                act.sendKeys(Keys.ENTER).perform();
+//                break;
+//            }
+//        }
+
+        //System.out.println(d);
+
+    }
+
 
     @AfterTest
     public void aftertest() {
