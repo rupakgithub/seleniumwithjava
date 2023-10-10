@@ -182,16 +182,20 @@ public class WidgetsTest {
         Thread.sleep(1000);
 
         driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div")).click();
+//        Thread.sleep(1000);
+//        WebElement e = driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div//div[@role='listbox']"));
+//        String d = e.getAttribute("innerHTML");
+//        System.out.println(d);
 
         /*
          * Method 1
          */
 
-        Thread.sleep(1000);
-
-        WebElement elem = driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div//div[@role='option']/span[text()='ESS']"));
-
-        elem.click();
+//        Thread.sleep(1000);
+//
+//        WebElement elem = driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div//div[@role='option']/span[text()='ESS']"));
+//
+//        elem.click();
 
         //String d = elem.getAttribute("innerHTML");
 
@@ -199,17 +203,17 @@ public class WidgetsTest {
          * Method 2
          */
 
-//        Actions act = new Actions(driver);
-//        while (true){
-//            act.sendKeys(Keys.DOWN).perform();
-//            Thread.sleep(1000);
-//            WebElement elem = driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div//div[@role='option' and contains(@class, 'select-option --focused')]"));
-//            String userroleselected = elem.getText();
-//            if (userroleselected.equals(user_role_to_be_select)){
-//                act.sendKeys(Keys.ENTER).perform();
-//                break;
-//            }
-//        }
+        Actions act = new Actions(driver);
+        while (true){
+            act.sendKeys(Keys.DOWN).perform();
+            Thread.sleep(1000);
+            WebElement elem = driver.findElement(By.xpath("//label[contains(text(),'User Role')]/../following-sibling::div//div[@role='option' and contains(@class, 'select-option --focused')]"));
+            String userroleselected = elem.getText();
+            if (userroleselected.equals(user_role_to_be_select)){
+                act.sendKeys(Keys.ENTER).perform();
+                break;
+            }
+        }
 
         //System.out.println(d);
 
