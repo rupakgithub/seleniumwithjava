@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b970ca-f4b6-4638-be56-c59190c7ff0a" name="Changes" comment="Added locator for drop down">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/uitests/WidgetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/uitests/WidgetsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,35 +42,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.WidgetsTest.openHRM_add_user">
+  <component name="RunManager" selected="TestNG.CucumberRunnerTests">
     <configuration name="GenericsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.advancejava.GenericsExample" />
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.advancejava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Interfaceexample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Interfaceexample" />
-      <module name="seleniumwithjava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.advancejava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Interfaceexample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.Interfaceexample" />
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
@@ -99,6 +73,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstAPITest.bdd_validate_api" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.apitests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.apitests.FirstAPITest" />
+      <option name="METHOD_NAME" value="bdd_validate_api" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstAPITest.validate_get_request" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumwithjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.apitests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.apitests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.apitests.FirstAPITest" />
+      <option name="METHOD_NAME" value="validate_get_request" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WidgetsTest.openHRM_add_user" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumwithjava" />
       <extension name="coverage">
@@ -119,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WidgetsTest.openHRM_add_user" />
         <item itemvalue="TestNG.CucumberRunnerTests" />
+        <item itemvalue="TestNG.FirstAPITest.bdd_validate_api" />
+        <item itemvalue="TestNG.FirstAPITest.validate_get_request" />
+        <item itemvalue="TestNG.WidgetsTest.openHRM_add_user" />
         <item itemvalue="Application.GenericsExample" />
-        <item itemvalue="Application.Interfaceexample" />
-        <item itemvalue="Application.Interfaceexample (1)" />
       </list>
     </recent_temporary>
   </component>
