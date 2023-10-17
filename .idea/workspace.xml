@@ -42,13 +42,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.CucumberRunnerTests">
-    <configuration name="GenericsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.advancejava.GenericsExample" />
+  <component name="RunManager" selected="Application.Stringtest">
+    <configuration name="Stringtest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.test.test.Stringtest" />
       <module name="seleniumwithjava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.advancejava.*" />
+          <option name="PATTERN" value="org.test.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Stringtest" />
         <item itemvalue="TestNG.CucumberRunnerTests" />
         <item itemvalue="TestNG.FirstAPITest.bdd_validate_api" />
         <item itemvalue="TestNG.FirstAPITest.validate_get_request" />
         <item itemvalue="TestNG.WidgetsTest.openHRM_add_user" />
-        <item itemvalue="Application.GenericsExample" />
       </list>
     </recent_temporary>
   </component>
