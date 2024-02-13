@@ -13,7 +13,7 @@ public class Testngprac {
 
     @BeforeMethod
     public void beforemethod(){
-        System.out.println("beforetest");
+        System.out.println("beforemethod");
     }
 
 
