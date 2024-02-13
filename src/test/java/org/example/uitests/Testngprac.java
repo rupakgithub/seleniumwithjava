@@ -6,6 +6,16 @@ import org.testng.annotations.*;
 
 public class Testngprac {
 
+    @BeforeSuite
+    public void beforesuite(){
+        System.out.println("beforesuite");
+    }
+
+    @BeforeClass
+    public void beforeclass(){
+        System.out.println("beforclass");
+    }
+
     @BeforeTest
     public void beforetest(){
         System.out.println("beforetest");
@@ -36,5 +46,16 @@ public class Testngprac {
     public void aftermethod(){
         System.out.println("aftermethod");
     }
+
+    @AfterClass
+    public void afterclass(){
+        System.out.println("afterclass");
+    }
+
+    @AfterSuite
+    public void aftersuite(){
+        System.out.println("beforesuite");
+    }
+
 
 }
